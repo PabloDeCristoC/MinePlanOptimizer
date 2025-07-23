@@ -4,3 +4,17 @@
 #include <vector>
 #include <string>
 #include "mining_models.h"
+
+using namespace std;
+
+class FileManager{
+public:
+    // Funciones para CSV
+    static bool guardarEquiposCSV(const vector<Equipo>& equipos, const string& filename = "equipos.csv");
+    static bool cargarEquiposCSV(vector<Equipo>& equipos, const string& filename = "equipos.csv");
+    
+    static bool guardarRecursosCSV(const vector<RecursoHumano>& recursos, const string& filename = "recursos.csv");
+    static bool cargarRecursosCSV(vector<RecursoHumano>& recursos, const string& filename = "recursos.csv");
+    
+    static bool guardarTareasCSV(const vector<Tarea>& tareas, const string& filename = "tareas.csv");
+    static bool cargarTareasCSV(vector<Tarea>& tareas, const string& filename = "tareas.csv");
