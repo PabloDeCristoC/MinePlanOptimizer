@@ -9,7 +9,7 @@ using namespace std;
 
 class FileManager{
 public:
-    // Funciones para CSV
+    
     static bool guardarEquiposCSV(const vector<Equipo>& equipos, const string& filename = "equipos.csv");
     static bool cargarEquiposCSV(vector<Equipo>& equipos, const string& filename = "equipos.csv");
     
@@ -19,7 +19,7 @@ public:
     static bool guardarTareasCSV(const vector<Tarea>& tareas, const string& filename = "tareas.csv");
     static bool cargarTareasCSV(vector<Tarea>& tareas, const string& filename = "tareas.csv");
 
-    // Funciones para JSON
+    
     static bool guardarTodosJSON(const vector<Equipo>& equipos, 
                                 const vector<RecursoHumano>& recursos, 
                                 const vector<Tarea>& tareas, 
@@ -29,3 +29,19 @@ public:
                                vector<RecursoHumano>& recursos, 
                                vector<Tarea>& tareas, 
                                const string& filename = "mine_data.json");
+                                 // Funciones auxiliares
+    static string vectorIntToString(const vector<int>& vec);
+    static vector<int> stringToVectorInt(const string& str);
+    static string boolToString(bool value);
+    static bool stringToBool(const string& str);
+    
+    
+    static bool crearRespaldo(const vector<Equipo>& equipos, 
+                             const vector<RecursoHumano>& recursos, 
+                             const vector<Tarea>& tareas);
+    static bool restaurarRespaldo(vector<Equipo>& equipos, 
+                                 vector<RecursoHumano>& recursos, 
+                                 vector<Tarea>& tareas);
+};
+
+#endif // FILE_MANAGER_H
