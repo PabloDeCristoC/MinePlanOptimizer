@@ -18,3 +18,14 @@ public:
     
     static bool guardarTareasCSV(const vector<Tarea>& tareas, const string& filename = "tareas.csv");
     static bool cargarTareasCSV(vector<Tarea>& tareas, const string& filename = "tareas.csv");
+
+    // Funciones para JSON
+    static bool guardarTodosJSON(const vector<Equipo>& equipos, 
+                                const vector<RecursoHumano>& recursos, 
+                                const vector<Tarea>& tareas, 
+                                const string& filename = "mine_data.json");
+    
+    static bool cargarTodosJSON(vector<Equipo>& equipos, 
+                               vector<RecursoHumano>& recursos, 
+                               vector<Tarea>& tareas, 
+                               const string& filename = "mine_data.json");
