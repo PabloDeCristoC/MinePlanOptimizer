@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.h": "cpp",           // Trata los .h como archivos C++
+        "vector": "cpp",        // Resaltado para 'vector'
+        "iostream": "cpp"       // Resaltado para 'iostream'
+    },
+    "C_Cpp.intelliSenseEngine": "Default",  // Mejor autocompletado
+    "editor.formatOnSave": true,            // Formato automático
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"  // Estilo de código
+}
