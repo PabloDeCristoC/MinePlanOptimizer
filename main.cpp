@@ -70,25 +70,16 @@ bool obtenerBoolean(const string& mensaje) {
 
 ---------------------
 
-
-
-
-void mostrarRecursoHumano(const RecursoHumano& r){
-    cout << "ID: " << r.id 
-         << " | Nombre: " << r.nombre 
-         << " | Rol: " << r.rol
-         << " | Disponible: " << (r.disponible ? "Sí" : "No") 
+void mostrarEquipo(const Equipo& e) {
+    cout << "ID: " << e.id 
+         << " | Nombre: " << e.nombre 
+         << " | Tipo: " << e.tipo
+         << " | Capacidad: " << e.capacidad
+         << " | Disponible: " << (e.disponible ? "Sí" : "No") 
          << endl;
 }
 
 
-void mostrarTarea(const Tarea& t){
-    cout << "ID: " << t.id 
-         << " | Descripción: " << t.descripcion
-         << " | Duración (hrs): " << t.duracionHoras
-         << " | Completada: " << (t.completada ? "Sí" : "No") 
-         << endl;
-}
 
 int main() {
     
