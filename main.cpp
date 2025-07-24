@@ -85,7 +85,7 @@ int main() {
     int opcion;
     
     cout << "=== BIENVENIDO A MINE PLAN OPTIMIZER ===" << endl;
-    cout << "Sistema Simplificado de Gestion Minera" << endl;
+    cout << "Sistema de Gestion Minera / Desarrollado por: Pablo Emanuel De Cristo Cavieres Körn" << endl;
     pausar();
     
     do {
@@ -106,7 +106,8 @@ int main() {
             case 3: mostrarEstadisticas(); break;
             case 4: cargarDatosEjemplo(); break;
             case 0: 
-                cout << "\nGracias por usar Mine Plan Optimizer!" << endl;
+                cout <<"\nGracias por usar Mine Plan Optimizer!"<< endl;
+                cout <<"\nDesarrollado por: Pablo Emanuel De Cristo Cavieres Körn"<< endl;
                 break;
             default: 
                 cout << "Opcion invalida." << endl;
