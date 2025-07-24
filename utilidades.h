@@ -4,18 +4,19 @@
 #include <iostream>
 using namespace std;
 
-
 void limpiarPantalla();
 void pausar();
 
-
 int leerEntero(const char* mensaje);
-void leerTexto(const char* mensaje, char* destino, int tamaño);
+void leerTexto(const char* mensaje, char* destino, int tamano);
 char leerSiNo(const char* mensaje);
 
-
 void limpiarPantalla() {
-    system("clear");
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
 }
 
 void pausar() {
@@ -32,9 +33,9 @@ int leerEntero(const char* mensaje) {
     return valor;
 }
 
-void leerTexto(const char* mensaje, char* destino, int tamaño) {
+void leerTexto(const char* mensaje, char* destino, int tamano) {
     cout << mensaje;
-    cin.getline(destino, tamaño);
+    cin.getline(destino, tamano);
 }
 
 char leerSiNo(const char* mensaje) {

@@ -15,7 +15,6 @@ int totalEquipos = 0;
 int totalRecursos = 0;
 int totalTareas = 0;
 
-// Carga algunos datos de prueba para el sistema
 void cargarDatosEjemplo() {
     totalEquipos = 0;
     totalRecursos = 0;
@@ -27,33 +26,33 @@ void cargarDatosEjemplo() {
     equipos[0].capacidad = 100;
     equipos[0].disponible = true;
     
-    strcpy(equipos[1].nombre, "Camión Volvo");
-    strcpy(equipos[1].tipo, "Camión");
+    strcpy(equipos[1].nombre, "Camion Volvo");
+    strcpy(equipos[1].tipo, "Camion");
     equipos[1].id = 2;
     equipos[1].capacidad = 40;
     equipos[1].disponible = true;
     
     totalEquipos = 2;
     
-    strcpy(recursos[0].nombre, "Juan Pérez");
+    strcpy(recursos[0].nombre, "Juan Perez");
     strcpy(recursos[0].rol, "Operador");
     recursos[0].id = 1;
     recursos[0].disponible = true;
     
-    strcpy(recursos[1].nombre, "María González");
+    strcpy(recursos[1].nombre, "Maria Gonzalez");
     strcpy(recursos[1].rol, "Supervisor");
     recursos[1].id = 2;
     recursos[1].disponible = true;
     
     totalRecursos = 2;
     
-    cout << "✓ Datos de ejemplo cargados!" << endl;
+    cout << "Datos de ejemplo cargados!" << endl;
     pausar();
 }
 
 void mostrarEstadisticas() {
     limpiarPantalla();
-    cout << "=== ESTADÍSTICAS GENERALES ===" << endl;
+    cout << "=== ESTADISTICAS GENERALES ===" << endl;
     
     int equiposDisponibles = 0;
     for (int i = 0; i < totalEquipos; i++) {
@@ -82,25 +81,24 @@ void mostrarEstadisticas() {
     pausar();
 }
 
-
 int main() {
     int opcion;
     
     cout << "=== BIENVENIDO A MINE PLAN OPTIMIZER ===" << endl;
-    cout << "Sistema Simplificado de Gestión Minera" << endl;
+    cout << "Sistema Simplificado de Gestion Minera" << endl;
     pausar();
     
     do {
         limpiarPantalla();
-        cout << "=== MENÚ PRINCIPAL ===" << endl;
-        cout << "1. Gestión de Equipos" << endl;
-        cout << "2. Gestión de Recursos Humanos" << endl;
-        cout << "3. Ver Estadísticas" << endl;
+        cout << "=== MENU PRINCIPAL ===" << endl;
+        cout << "1. Gestion de Equipos" << endl;
+        cout << "2. Gestion de Recursos Humanos" << endl;
+        cout << "3. Ver Estadisticas" << endl;
         cout << "4. Cargar Datos de Ejemplo" << endl;
         cout << "0. Salir" << endl;
         cout << "=====================" << endl;
         
-        opcion = leerEntero("Selecciona una opción: ");
+        opcion = leerEntero("Selecciona una opcion: ");
         
         switch (opcion) {
             case 1: menuEquipos(); break;
@@ -108,10 +106,10 @@ int main() {
             case 3: mostrarEstadisticas(); break;
             case 4: cargarDatosEjemplo(); break;
             case 0: 
-                cout << "\n¡Gracias por usar Mine Plan Optimizer!" << endl;
+                cout << "\nGracias por usar Mine Plan Optimizer!" << endl;
                 break;
             default: 
-                cout << "Opción inválida." << endl;
+                cout << "Opcion invalida." << endl;
                 pausar();
         }
     } while (opcion != 0);
