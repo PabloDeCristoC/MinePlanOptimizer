@@ -6,7 +6,7 @@
 
 ## 📌 Übersicht
 
-Dieses Projekt ist eine C++-basierte Anwendung zur Unterstützung bei der Planung, Optimierung und Ressourcenverwaltung im Bergbau. Es modelliert reale Szenarien, simuliert die Ausführung von Aufgaben und bietet intelligente Empfehlungen für eine effiziente Ressourcenzuteilung.
+Dieses Projekt ist eine C/C++ -basierte Anwendung zur Unterstützung bei der Planung, Optimierung und Ressourcenverwaltung im Bergbau. Es modelliert reale Szenarien, simuliert die Ausführung von Aufgaben und bietet intelligente Empfehlungen für eine effiziente Ressourcenzuteilung.
 
 ---
 
@@ -22,7 +22,7 @@ Dieses Projekt ist eine C++-basierte Anwendung zur Unterstützung bei der Planun
 
 ## ⚙️ Technische Details
 
-- **C++-Strukturen** zur Modellierung von Geräten, Aufgaben, Zeitplänen und Ressourcen.  
+- **C/C++-Strukturen** zur Modellierung von Geräten, Aufgaben, Zeitplänen und Ressourcen.  
 - **Einfache Optimierungsalgorithmen** (z. B. Greedy-Verfahren, regelbasierte Suche).  
 - **Konsolenbasierte Benutzeroberfläche (CLI)** mit Zukunftsplanung für eine benutzerfreundliche grafische Oberfläche für die `.exe`.  
 - **Dateiverwaltung** zum Speichern von Daten und Simulationsergebnissen.
@@ -40,7 +40,7 @@ Dieses Projekt ist eine C++-basierte Anwendung zur Unterstützung bei der Planun
 
 ## 🧠 Technologien & Konzepte
 
-- C++.  
+- C/C++.  
 - Logik zur Ressourcenzuweisung und Aufgabenplanung.  
 - Szenariosimulation und Modellierung.  
 - Strukturierte und klar formatierte Ausgaben im Stil technischer Berichte.

@@ -6,7 +6,7 @@
 
 ## 📌 Descripción General
 
-Este proyecto es una aplicación basada en C++ diseñada para asistir en la planificación, optimización y gestión de recursos en operaciones mineras. Modela escenarios reales, simula la ejecución de tareas y proporciona recomendaciones inteligentes para una asignación eficiente de recursos.
+Este proyecto es una aplicación basada en C/C++ diseñada para asistir en la planificación, optimización y gestión de recursos en operaciones mineras. Modela escenarios reales, simula la ejecución de tareas y proporciona recomendaciones inteligentes para una asignación eficiente de recursos.
 
 ---
 
@@ -22,7 +22,7 @@ Este proyecto es una aplicación basada en C++ diseñada para asistir en la plan
 
 ## ⚙️ Detalles Técnicos
 
-- **Estructuras en C++** para modelar equipos, tareas, cronogramas y recursos.
+- **Estructuras en C/C++** para modelar equipos, tareas, cronogramas y recursos.
 - **Algoritmos de optimización simples** (por ejemplo, heurísticas voraces, búsqueda basada en reglas).
 - **Interfaz basada en consola (CLI)** con planes futuros de evolucionar hacia una interfaz gráfica para el `.exe`.
 - **Manejo de archivos** para almacenar datos y resultados de simulación.
@@ -40,7 +40,7 @@ Este proyecto es una aplicación basada en C++ diseñada para asistir en la plan
 
 ## 🧠 Tecnologías y Conceptos
 
-- C++.
+- C/C++.
 - Lógica de asignación de recursos y programación de tareas.
 - Simulación y modelado de escenarios.
 - Formato de salida claro y orientado a reportes de ingeniería.

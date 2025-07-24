@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-This project is a C++-based application designed to assist in the planning, optimization, and resource management of mining operations. It models real-world mining scenarios, simulates task execution, and provides intelligent recommendations for efficient resource allocation.
+This project is a C/C++ -based application designed to assist in the planning, optimization, and resource management of mining operations. It models real-world mining scenarios, simulates task execution, and provides intelligent recommendations for efficient resource allocation.
 
 ---
 
@@ -22,7 +22,7 @@ This project is a C++-based application designed to assist in the planning, opti
 
 ## ⚙️ Technical Details
 
-- **C++ structures** for modeling equipment, tasks, schedules, and resources.
+- **C/C++ structures** for modeling equipment, tasks, schedules, and resources.
 - **Simple optimization algorithms** (e.g. greedy, search-based heuristics).
 - **Console-based interface** (CLI) with plans to evolve to a more intuitive GUI wrapper for the `.exe`.
 - **File handling** for storing data and simulation results.
@@ -40,7 +40,7 @@ This project is a C++-based application designed to assist in the planning, opti
 
 ## 🧠 Technologies & Concepts
 
-- C++
+- C/C++.
 - Resource allocation logic and task scheduling.
 - Simulation and scenario modeling.
 - Clean output formatting for engineering-style reporting.
