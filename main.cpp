@@ -8,11 +8,11 @@
 using namespace std;
 
 /*
- * ALMACENAMIENTO PRINCIPAL DEL SISTEMA
- * Estos arrays guardan toda la información:
- * - equipos[] = todos los equipos registrados
- * - recursos[] = todos los trabajadores registrados  
- * - tareas[] = todas las tareas de trabajo (por implementar)
+ *ALMACENAMIENTO PRINCIPAL DEL SISTEMA
+  Estos Arreglos guardan toda la información:
+  equipos[] = todos los equipos registrados
+  recursos[] = todos los trabajadores registrados  
+  tareas[] = todas las tareas de trabajo (por implementar)
  */
 Equipo equipos[MAX_EQUIPOS];
 RecursoHumano recursos[MAX_RECURSOS];
