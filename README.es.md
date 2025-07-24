@@ -40,24 +40,10 @@ Este proyecto es una aplicación basada en C++ diseñada para asistir en la plan
 
 ## 🧠 Tecnologías y Conceptos
 
-- Uso de `struct` y `vector` en C++.
+- C++.
 - Lógica de asignación de recursos y programación de tareas.
 - Simulación y modelado de escenarios.
 - Formato de salida claro y orientado a reportes de ingeniería.
-
----
-
-## 🚧 Hoja de Ruta del Proyecto
-
-Este proyecto se desarrolla de manera incremental en las siguientes fases:
-
-1. **Lógica principal y modelos de datos**
-2. **Interfaz de línea de comandos (CLI)** para gestionar recursos y tareas
-3. **Configuración del repositorio GitHub** con documentación (fase actual)
-4. **Soporte para entrada/salida de archivos** (CSV, JSON, etc.)
-5. **Simulación de escenarios** con optimización básica
-6. **Reporte de métricas de rendimiento**
-7. **Interfaz gráfica (GUI) para el `.exe`** (compatibilidad con Windows)
 
 ---
 

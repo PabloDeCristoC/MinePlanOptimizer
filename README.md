@@ -40,24 +40,10 @@ This project is a C++-based application designed to assist in the planning, opti
 
 ## 🧠 Technologies & Concepts
 
-- C++ `struct` and `vector` usage.
+- C++
 - Resource allocation logic and task scheduling.
 - Simulation and scenario modeling.
 - Clean output formatting for engineering-style reporting.
-
----
-
-## 🚧 Project Roadmap
-
-This project is being built incrementally in the following phases:
-
-1. **Core logic & data models**
-2. **Command-line interface (CLI)** for managing resources and tasks
-3. **GitHub repository setup** with documentation (current)
-4. **Input/output file support** (CSV, JSON, etc.)
-5. **Scenario simulations** with basic optimization
-6. **Performance metrics reporting**
-7. **GUI shell for `.exe`** (Windows-friendly)
 
 ---
 
