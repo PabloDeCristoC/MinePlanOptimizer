@@ -7,15 +7,13 @@
 #define MAX_NOMBRE 50
 #define MAX_DESCRIPCION 100
 
-
 struct Equipo {
     int id;                     
     char nombre[MAX_NOMBRE];    
     char tipo[MAX_NOMBRE];      
     int capacidad;              
-    bool disponible;           
+    bool disponible;            
 };
-
 
 struct RecursoHumano {
     int id;                     
@@ -23,7 +21,6 @@ struct RecursoHumano {
     char rol[MAX_NOMBRE];       
     bool disponible;            
 };
-
 
 struct Tarea {
     int id;                           
