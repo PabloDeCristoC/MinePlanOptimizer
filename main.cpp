@@ -7,12 +7,11 @@
 
 using namespace std;
 
-// Variables globales para almacenar datos
+
 vector<Equipo> equipos;
 vector<RecursoHumano> recursos;
 vector<Tarea> tareas;
 
-// Función para limpiar la pantalla (multiplataforma)
 void limpiarPantalla() {
     #ifdef _WIN32
         system("cls");
@@ -21,20 +20,20 @@ void limpiarPantalla() {
     #endif
 }
 
-// Función para pausar y esperar input del usuario
+
 void pausar() {
     cout << "\nPresiona Enter para continuar...";
     cin.ignore();
     cin.get();
 }
 
-// Función para obtener input entero seguro
+
 int obtenerEntero(const string& mensaje) {
     int valor;
     while (true) {
         cout << mensaje;
         if (cin >> valor) {
-            cin.ignore(); // Limpiar buffer
+            cin.ignore();
             return valor;
         } else {
             cout << "Error: Ingresa un número válido.\n";
@@ -44,7 +43,7 @@ int obtenerEntero(const string& mensaje) {
     }
 }
 
-// Función para obtener string seguro
+
 string obtenerString(const string& mensaje) {
     string valor;
     cout << mensaje;
@@ -52,7 +51,7 @@ string obtenerString(const string& mensaje) {
     return valor;
 }
 
-// Función para obtener boolean
+
 bool obtenerBoolean(const string& mensaje) {
     char respuesta;
     while (true) {
@@ -65,7 +64,6 @@ bool obtenerBoolean(const string& mensaje) {
     }
 }
 
-// ==================== FUNCIONES DE EQUIPOS ====================
 
 void mostrarEquipo(const Equipo& e) {
     cout << "ID: " << e.id 
@@ -101,7 +99,6 @@ void crearEquipo() {
     
     Equipo nuevoEquipo;
     
-    // Generar ID automático
     nuevoEquipo.id = equipos.empty() ? 1 : equipos.back().id + 1;
     
     nuevoEquipo.nombre = obtenerString("Nombre del equipo: ");
@@ -127,7 +124,6 @@ void eliminarEquipo() {
         return;
     }
     
-    // Mostrar equipos disponibles
     cout << "Equipos disponibles:" << endl;
     for (const auto& e : equipos) {
         mostrarEquipo(e);
@@ -148,7 +144,6 @@ void eliminarEquipo() {
     pausar();
 }
 
-// ==================== FUNCIONES DE RECURSOS HUMANOS ====================
 
 void mostrarRecursoHumano(const RecursoHumano& r) {
     cout << "ID: " << r.id 
@@ -208,7 +203,7 @@ void eliminarRecurso() {
         return;
     }
     
-    // Mostrar recursos disponibles
+
     cout << "Recursos humanos disponibles:" << endl;
     for (const auto& r : recursos) {
         mostrarRecursoHumano(r);
@@ -229,7 +224,7 @@ void eliminarRecurso() {
     pausar();
 }
 
-// ==================== FUNCIONES DE TAREAS ====================
+
 
 void mostrarTarea(const Tarea& t) {
     cout << "ID: " << t.id 
@@ -307,7 +302,7 @@ vector<int> seleccionarRecursos(const string& tipo, bool esEquipo) {
     if (!linea.empty()) {
         size_t pos = 0;
         string token;
-        linea += " "; // Añadir espacio al final para procesar último token
+        linea += " "; 
         
         while ((pos = linea.find(' ')) != string::npos) {
             token = linea.substr(0, pos);
@@ -318,7 +313,7 @@ vector<int> seleccionarRecursos(const string& tipo, bool esEquipo) {
                         seleccionados.push_back(id);
                     }
                 } catch (const exception&) {
-                    // Ignorar tokens inválidos
+                    
                 }
             }
             linea.erase(0, pos + 1);
@@ -336,16 +331,15 @@ void crearTarea() {
     
     Tarea nuevaTarea;
     
-    // Generar ID automático
     nuevaTarea.id = tareas.empty() ? 1 : tareas.back().id + 1;
     
     nuevaTarea.descripcion = obtenerString("Descripción de la tarea: ");
     nuevaTarea.duracionHoras = obtenerEntero("Duración estimada (horas): ");
     
-    // Seleccionar equipos necesarios
+
     nuevaTarea.equiposNecesarios = seleccionarRecursos("Equipos", true);
     
-    // Seleccionar recursos humanos necesarios
+
     nuevaTarea.recursosHumanosNecesarios = seleccionarRecursos("Recursos humanos", false);
     
     nuevaTarea.completada = false;
@@ -368,7 +362,7 @@ void completarTarea() {
         return;
     }
     
-    // Mostrar tareas pendientes
+
     cout << "Tareas pendientes:" << endl;
     bool hayPendientes = false;
     for (const auto& t : tareas) {
@@ -403,7 +397,6 @@ void completarTarea() {
     pausar();
 }
 
-// ==================== MENÚS ====================
 
 void menuEquipos() {
     int opcion;
@@ -487,22 +480,22 @@ void menuTareas() {
 }
 
 void cargarDatosEjemplo() {
-    // Limpiar datos existentes
+
     equipos.clear();
     recursos.clear();
     tareas.clear();
     
-    // Agregar equipos de ejemplo
+
     equipos.push_back({1, "Excavadora CAT 320", "Excavadora", 100, true});
     equipos.push_back({2, "Camión Volvo FH16", "Camión", 40, true});
     equipos.push_back({3, "Taladro Atlas Copco", "Taladro", 200, false});
     
-    // Agregar recursos humanos de ejemplo
+
     recursos.push_back({1, "Juan Pérez", "Operador", true});
     recursos.push_back({2, "María González", "Supervisor", true});
     recursos.push_back({3, "Carlos Rodríguez", "Técnico", false});
     
-    // Agregar tareas de ejemplo
+
     tareas.push_back({1, "Cargar material en camión", 5, {1}, {1}, false});
     tareas.push_back({2, "Transporte de mineral", 3, {2}, {1}, false});
     tareas.push_back({3, "Perforación de túnel", 8, {3}, {1, 3}, false});
@@ -511,7 +504,7 @@ void cargarDatosEjemplo() {
     pausar();
 }
 
-// ==================== FUNCIONES DE ARCHIVOS ====================
+
 
 void menuExportarCSV() {
     limpiarPantalla();
@@ -771,7 +764,6 @@ void mostrarEstadisticas() {
     cout << "                      ESTADÍSTICAS GENERALES                   " << endl;
     cout << "════════════════════════════════════════════════════════════════" << endl;
     
-    // Estadísticas de equipos
     int equiposDisponibles = count_if(equipos.begin(), equipos.end(), 
                                      [](const Equipo& e) { return e.disponible; });
     cout << "EQUIPOS:" << endl;
@@ -779,7 +771,7 @@ void mostrarEstadisticas() {
     cout << "  Disponibles: " << equiposDisponibles << endl;
     cout << "  No disponibles: " << (equipos.size() - equiposDisponibles) << endl;
     
-    // Estadísticas de recursos
+
     int recursosDisponibles = count_if(recursos.begin(), recursos.end(), 
                                       [](const RecursoHumano& r) { return r.disponible; });
     cout << "\nRECURSOS HUMANOS:" << endl;
@@ -787,7 +779,7 @@ void mostrarEstadisticas() {
     cout << "  Disponibles: " << recursosDisponibles << endl;
     cout << "  No disponibles: " << (recursos.size() - recursosDisponibles) << endl;
     
-    // Estadísticas de tareas
+
     int tareasCompletadas = count_if(tareas.begin(), tareas.end(), 
                                     [](const Tarea& t) { return t.completada; });
     int horasTotales = 0;
