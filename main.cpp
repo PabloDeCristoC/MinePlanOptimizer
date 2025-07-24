@@ -7,13 +7,6 @@
 
 using namespace std;
 
-/*
- *ALMACENAMIENTO PRINCIPAL DEL SISTEMA
-  Estos Arreglos guardan toda la información:
-  equipos[] = todos los equipos registrados
-  recursos[] = todos los trabajadores registrados  
-  tareas[] = todas las tareas de trabajo (por implementar)
- */
 Equipo equipos[MAX_EQUIPOS];
 RecursoHumano recursos[MAX_RECURSOS];
 Tarea tareas[MAX_TAREAS];
@@ -24,12 +17,10 @@ int totalTareas = 0;
 
 // Carga algunos datos de prueba para el sistema
 void cargarDatosEjemplo() {
-    // Resetear contadores
     totalEquipos = 0;
     totalRecursos = 0;
     totalTareas = 0;
     
-    // Crear equipos de ejemplo
     strcpy(equipos[0].nombre, "Excavadora CAT 320");
     strcpy(equipos[0].tipo, "Excavadora");
     equipos[0].id = 1;
@@ -44,7 +35,6 @@ void cargarDatosEjemplo() {
     
     totalEquipos = 2;
     
-    // Crear trabajadores de ejemplo
     strcpy(recursos[0].nombre, "Juan Pérez");
     strcpy(recursos[0].rol, "Operador");
     recursos[0].id = 1;
@@ -61,12 +51,10 @@ void cargarDatosEjemplo() {
     pausar();
 }
 
-// Muestra estadisticas generales del sistema
 void mostrarEstadisticas() {
     limpiarPantalla();
     cout << "=== ESTADÍSTICAS GENERALES ===" << endl;
     
-    // Contar equipos disponibles
     int equiposDisponibles = 0;
     for (int i = 0; i < totalEquipos; i++) {
         if (equipos[i].disponible) {
@@ -74,7 +62,6 @@ void mostrarEstadisticas() {
         }
     }
     
-    // Contar recursos disponibles
     int recursosDisponibles = 0;
     for (int i = 0; i < totalRecursos; i++) {
         if (recursos[i].disponible) {
@@ -95,7 +82,7 @@ void mostrarEstadisticas() {
     pausar();
 }
 
-// PROGRAMA PRINCIPAL
+
 int main() {
     int opcion;
     

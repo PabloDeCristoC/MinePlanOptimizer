@@ -4,18 +4,18 @@
 #include <iostream>
 using namespace std;
 
-// Funciones basicas del sistema
+
 void limpiarPantalla();
 void pausar();
 
-// Funciones para leer datos desde teclado
+
 int leerEntero(const char* mensaje);
 void leerTexto(const char* mensaje, char* destino, int tamaño);
 char leerSiNo(const char* mensaje);
 
-// Implementaciones
+
 void limpiarPantalla() {
-    system("clear");  // En Windows cambiar por "cls"
+    system("clear");
 }
 
 void pausar() {

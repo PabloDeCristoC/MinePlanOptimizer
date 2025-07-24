@@ -5,17 +5,17 @@
 #include "utilidades.h"
 #include <cstring>
 
-// Variables globales para recursos humanos
+
 extern RecursoHumano recursos[MAX_RECURSOS];
 extern int totalRecursos;
 
-// Funciones para manejo de recursos humanos
+
 void mostrarRecurso(int indice);
 void listarRecursos();
 void crearRecurso();
 void menuRecursos();
 
-// Implementaciones
+
 void mostrarRecurso(int indice) {
     cout << "ID: " << recursos[indice].id 
          << " | Nombre: " << recursos[indice].nombre 

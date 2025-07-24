@@ -5,18 +5,18 @@
 #include "utilidades.h"
 #include <cstring>
 
-// Variables globales para equipos
+
 extern Equipo equipos[MAX_EQUIPOS];
 extern int totalEquipos;
 
-// Funciones para manejo de equipos
+
 void mostrarEquipo(int indice);
 void listarEquipos();
 void crearEquipo();
 void eliminarEquipo();
 void menuEquipos();
 
-// Implementaciones
+
 void mostrarEquipo(int indice) {
     cout << "ID: " << equipos[indice].id 
          << " | Nombre: " << equipos[indice].nombre 
