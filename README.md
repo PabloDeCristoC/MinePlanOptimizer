@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-This project is a C/C++ -based application designed to assist in the planning, optimization, and resource management of mining operations. It models real-world mining scenarios, simulates task execution, and provides intelligent recommendations for efficient resource allocation.
+This project is a C/C++-based application designed to assist in the planning, optimization, and resource management of mining operations. It models real-world mining scenarios, simulates task execution, and provides intelligent recommendations for efficient resource allocation.
 
 ---
 
@@ -50,4 +50,4 @@ This project is a C/C++ -based application designed to assist in the planning, o
 ## 📬 Contact
 
 Project developed by **Pablo Emanuel de Cristo Cavieres Körn**  
-Student Civil Engineering in Computing – UTEM (Chile)
+Student, Civil Engineering in Computing, Computer Science Specialization — UTEM (Chile)

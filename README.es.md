@@ -1,53 +1,53 @@
-# 🛠️ Herramienta de Planificación y Optimización de Operaciones Mineras
+# 🛠️ Herramienta para Planificación y Optimización de Operaciones Mineras
 
-[🇬🇧 English](README.md) | [🇩🇪 Deutsch](README.de.md)
-
----
-
-## 📌 Descripción General
-
-Este proyecto es una aplicación basada en C/C++ diseñada para asistir en la planificación, optimización y gestión de recursos en operaciones mineras. Modela escenarios reales, simula la ejecución de tareas y proporciona recomendaciones inteligentes para una asignación eficiente de recursos.
+[🇪🇸 Español](README.es.md) | [🇩🇪 Deutsch](README.de.md)
 
 ---
 
-## 🎯 Características Clave
+## 📌 Resumen
+
+Este proyecto es una aplicación basada en C/C++ diseñada para asistir en la planificación, optimización y gestión de recursos en operaciones mineras. Modela escenarios reales de minería, simula la ejecución de tareas y proporciona recomendaciones inteligentes para una asignación eficiente de recursos.
+
+---
+
+## 🎯 Características principales
 
 - Asignación óptima de maquinaria y recursos humanos a tareas específicas.
-- Gestión de tiempos y secuencias para maximizar la productividad y minimizar los tiempos muertos.
-- Evaluación de escenarios para la toma de decisiones estratégicas (por ejemplo, programación de mantenciones, redistribución de equipos).
-- Simulación básica de cronogramas y balance de carga de trabajo.
-- Generación de indicadores de rendimiento y reportes operacionales.
+- Gestión de tiempos y secuencias para maximizar productividad y minimizar tiempos muertos.
+- Evaluación de escenarios para la toma de decisiones estratégicas (ej. mantenimiento, redistribución de equipos).
+- Simulación básica de cronogramas y balance de cargas de trabajo.
+- Generación de indicadores de desempeño e informes operativos.
 
 ---
 
-## ⚙️ Detalles Técnicos
+## ⚙️ Detalles técnicos
 
 - **Estructuras en C/C++** para modelar equipos, tareas, cronogramas y recursos.
-- **Algoritmos de optimización simples** (por ejemplo, heurísticas voraces, búsqueda basada en reglas).
-- **Interfaz basada en consola (CLI)** con planes futuros de evolucionar hacia una interfaz gráfica para el `.exe`.
+- **Algoritmos simples de optimización** (ej. greedy, heurísticas basadas en búsqueda).
+- **Interfaz de consola** (CLI) con planes de evolucionar a una interfaz gráfica más intuitiva para el `.exe`.
 - **Manejo de archivos** para almacenar datos y resultados de simulación.
 
 ---
 
-## 🔍 Casos de Uso
+## 🔍 Casos de uso
 
 - Planificación y optimización de operaciones mineras.
-- Fines educativos en ingeniería civil e ingeniería en minas.
-- Investigación sobre algoritmos de planificación de proyectos.
+- Propósitos educativos en ingeniería civil y minería.
+- Investigación en algoritmos de planificación de proyectos.
 - Simulación y comparación de estrategias de asignación de recursos.
 
 ---
 
-## 🧠 Tecnologías y Conceptos
+## 🧠 Tecnologías y conceptos
 
 - C/C++.
-- Lógica de asignación de recursos y programación de tareas.
+- Lógica de asignación de recursos y planificación de tareas.
 - Simulación y modelado de escenarios.
-- Formato de salida claro y orientado a reportes de ingeniería.
+- Formateo limpio para reportes al estilo ingeniería.
 
 ---
 
 ## 📬 Contacto
 
 Proyecto desarrollado por **Pablo Emanuel de Cristo Cavieres Körn**  
-Estudiante de Ingeniería Civil en Computación, Mencion Informatica – UTEM (Chile)
+Estudiante de Ingeniería Civil en Computación, Mención Informática — UTEM (Chile)

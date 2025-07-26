@@ -1,53 +1,53 @@
-# 🛠️ Planungs- und Optimierungstool für Bergbaubetriebe
+# 🛠️ Planung und Optimierung von Bergbaubetriebsabläufen
 
-[🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md)
+[🇪🇸 Español](README.es.md) | [🇩🇪 Deutsch](README.de.md)
 
 ---
 
 ## 📌 Übersicht
 
-Dieses Projekt ist eine C/C++ -basierte Anwendung zur Unterstützung bei der Planung, Optimierung und Ressourcenverwaltung im Bergbau. Es modelliert reale Szenarien, simuliert die Ausführung von Aufgaben und bietet intelligente Empfehlungen für eine effiziente Ressourcenzuteilung.
+Dieses Projekt ist eine C/C++-basierte Anwendung, die bei der Planung, Optimierung und Ressourcenverwaltung von Bergbaubetrieben unterstützt. Es modelliert reale Bergbauszenarien, simuliert die Ausführung von Aufgaben und liefert intelligente Empfehlungen für eine effiziente Ressourcenzuteilung.
 
 ---
 
 ## 🎯 Hauptfunktionen
 
-- Optimale Zuweisung von Maschinen und Personal zu bestimmten Aufgaben.  
-- Zeit- und Ablaufmanagement zur Maximierung der Produktivität und Minimierung von Leerlaufzeiten.  
-- Bewertung von Szenarien zur strategischen Entscheidungsfindung (z. B. Wartungszeitpunkte, Umverteilung von Ausrüstung).  
-- Grundlegende Simulation von Zeitplänen und Arbeitslastverteilung.  
-- Generierung von Leistungskennzahlen und Betriebsberichten.
+- Optimale Zuordnung von Maschinen und Personal zu bestimmten Aufgaben.
+- Zeit- und Ablaufmanagement zur Maximierung der Produktivität und Minimierung von Stillstandszeiten.
+- Bewertung von Szenarien für strategische Entscheidungen (z. B. Wartungszeitpunkte, Umverteilung von Geräten).
+- Grundlegende Simulation von Zeitplänen und Arbeitsbelastungsausgleich.
+- Erstellung von Leistungsindikatoren und Betriebsberichten.
 
 ---
 
 ## ⚙️ Technische Details
 
-- **C/C++-Strukturen** zur Modellierung von Geräten, Aufgaben, Zeitplänen und Ressourcen.  
-- **Einfache Optimierungsalgorithmen** (z. B. Greedy-Verfahren, regelbasierte Suche).  
-- **Konsolenbasierte Benutzeroberfläche (CLI)** mit Zukunftsplanung für eine benutzerfreundliche grafische Oberfläche für die `.exe`.  
-- **Dateiverwaltung** zum Speichern von Daten und Simulationsergebnissen.
+- **C/C++-Strukturen** zur Modellierung von Ausrüstung, Aufgaben, Zeitplänen und Ressourcen.
+- **Einfache Optimierungsalgorithmen** (z. B. Greedy-Methoden, suchbasierte Heuristiken).
+- **Konsolenbasierte Benutzeroberfläche** (CLI) mit Plänen für eine benutzerfreundlichere GUI für die `.exe`.
+- **Dateiverwaltung** zur Speicherung von Daten und Simulationsergebnissen.
 
 ---
 
-## 🔍 Anwendungsbereiche
+## 🔍 Anwendungsfälle
 
-- Planung und Optimierung von Bergbaubetrieben.  
-- Bildungszwecke in der Bau- und Bergbautechnik.  
-- Forschung zu Projektplanungsalgorithmen.  
-- Simulation und Vergleich von Ressourcenzuteilungsstrategien.
+- Planung und Optimierung von Bergbaubetrieben.
+- Bildungszwecke im Bau- und Bergbauingenieurwesen.
+- Forschung zu Projektplanungsalgorithmen.
+- Simulation und Vergleich von Ressourcenallokationsstrategien.
 
 ---
 
 ## 🧠 Technologien & Konzepte
 
-- C/C++.  
-- Logik zur Ressourcenzuweisung und Aufgabenplanung.  
-- Szenariosimulation und Modellierung.  
-- Strukturierte und klar formatierte Ausgaben im Stil technischer Berichte.
+- C/C++.
+- Logik der Ressourcenallokation und Aufgabenplanung.
+- Simulation und Szenariomodellierung.
+- Saubere Ausgabeformatierung für ingenieurmäßige Berichte.
 
 ---
 
 ## 📬 Kontakt
 
 Projekt entwickelt von **Pablo Emanuel de Cristo Cavieres Körn**  
-Student der Bauinformatik – UTEM (Chile)
+Student des Bauingenieurwesens mit Schwerpunkt Informatik — UTEM (Chile)
