@@ -49,5 +49,5 @@ Dieses Projekt ist eine C/C++-basierte Anwendung, die bei der Planung, Optimieru
 
 ## 📬 Kontakt
 
-Projekt entwickelt von **Pablo Emanuel de Cristo Cavieres**  
+Projekt entwickelt von **Pablo Emanuel De Cristo Cavieres Martínez**  
 Student des Bauingenieurwesens mit Schwerpunkt Informatik — UTEM (Chile)

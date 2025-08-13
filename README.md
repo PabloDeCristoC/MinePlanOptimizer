@@ -49,5 +49,5 @@ This project is a C/C++-based application designed to assist in the planning, op
 
 ## 📬 Contact
 
-Project developed by **Pablo Emanuel de Cristo Cavieres**  
+Project developed by **Pablo Emanuel De Cristo Cavieres Martínez**  
 Student, Civil Engineering in Computing, Computer Science Specialization — UTEM (Chile)
