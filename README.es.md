@@ -49,5 +49,5 @@ Este proyecto es una aplicación basada en C/C++ diseñada para asistir en la pl
 
 ## 📬 Contacto
 
-Proyecto desarrollado por **Pablo Emanuel de Cristo Cavieres Körn**  
+Proyecto desarrollado por **Pablo Emanuel de Cristo Cavieres**  
 Estudiante de Ingeniería Civil en Computación, Mención Informática — UTEM (Chile)
